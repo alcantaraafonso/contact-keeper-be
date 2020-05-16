@@ -1,0 +1,4 @@
+{
+	"mongoURI": "mongodb://contact-keeper:contact-keeper$123@ds139956.mlab.com:39956/heroku_qmwlgkhf",
+	"jwtSecret": "contactKeeperTest"
+}
