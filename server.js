@@ -1,5 +1,6 @@
 const express = require('express');
 const connectDB = require('./config/db');
+const cors = require('./config/cors');
 
 const app = express();
 
@@ -10,6 +11,9 @@ const PORT = process.env.PORT || 5000;
 
 //Init Middleware - Bodyparser
 app.use(express.json({ extended: false }));
+
+//adicionando o middleware do CORS
+app.use(cors);
 
 //Define de routes
 app.use('/api/users', require('./routes/users'));
